@@ -1,5 +1,6 @@
 :root {
     --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
     --text: #434455;
     --dark: #2E2F42;
     --light: #F4F4FD;
@@ -74,11 +75,11 @@ ul {
 
 .btn.primary:hover,
 .btn.primary:focus {
-    background: #404BBF;
+    background: var(--pressed-state);
 }
 
 .btn.primary:active {
-    background: #404BBF;
+    background: var(--pressed-state);
 }
 
 .btn.secondary {
