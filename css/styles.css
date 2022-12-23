@@ -610,12 +610,56 @@ ul {
 }
 
 .footer_input_email {
+    margin-right: 24px;
+}
+
+.footer_input_email::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer_input_email {
     width: 264px;
     height: 40px;
+
+    padding-left: 16px;
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: var(--dark);
+    color: var(--white);
+}
+
+.btn_subscribe {
+    width: 165px;
+    height: 40px;
+
+    background-color: var(--primary-brand);
+    border: var(--primary-brand);
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+}
+
+.footer-icon_send {
+    width: 24px;
+    height: 24px;
 }
 
         /* Portfolio HTML */
