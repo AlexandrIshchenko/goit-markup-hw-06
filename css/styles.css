@@ -656,6 +656,17 @@ ul {
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
+
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn_subscribe:hover,
+.btn_subscribe:focus {
+    background: var(--pressed-state);
 }
 
 .footer-icon_send {
@@ -843,12 +854,17 @@ ul {
 
 .btn-modal_close:hover,
 .btn-modal_close:focus {
-    background-color: var(--accent);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    background-color: var(--pressed-state);
+    color: var(--white);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 50%;
 }
 
 .svg-modal_close {
     width: 8px;
     height: 8px;
+
+    fill: currentColor;
 }
