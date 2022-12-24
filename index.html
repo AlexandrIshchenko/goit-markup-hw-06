@@ -419,7 +419,7 @@
         <form class="footer-subscribe">
           
           <input class="footer_input_email" type="email" name="email" id="email" placeholder="E-mail">
-          <label class="footer-subtitle" for="email" class="footer-media">Subscribe</label>
+          <label class="footer-subtitle footer-media" for="email">Subscribe</label>
 
           <button class="btn_subscribe" type="submit">Subscribe
             <svg class="footer-icon_send">
@@ -439,18 +439,30 @@
           </svg>
         </button>
 
-        <form>
-          <h2>Leave your contacts and we will call you back</h2>
-          <label for="">name</label>
-          <input type="text">
-          <label for="">phone</label>
-          <input type="phone">
-          <label for="">email</label>
-          <input type="email">
-          <label for="">comment</label>
-          <input type="comment">
-          <label for="">I accept the terms and conditions of the<a href="#"> Privacy Policy</a></label>
-          <input type="checkbox">
+        <form class="modal-form">
+          <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+          
+          <label class="modal-subtitle" for="name">
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            name
+          </label>
+          <input class="modal-input" type="text" name="name" id="name">
+          
+
+          <label class="modal-subtitle" for="tel">phone</label>
+          <input class="modal-input" type="tel" name="tel" id="tel">
+
+          <label class="modal-subtitle" for="user-email">email</label>
+          <input class="modal-input"  type="email" name="user-email" id="user-email">
+          
+          <label class="modal-subtitle" for="user-comment">comment</label>
+          <textarea class="modal-comment" type="comment" name="comment" id="user-comment" placeholder="Text input"></textarea>
+
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label class="checkbox_consent" for="checkbox">I accept the terms and conditions of the<a href="#"> Privacy Policy</a></label>
+          
           <button type="submit">Send</button>
         </form>
       </div>
