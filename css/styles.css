@@ -994,6 +994,7 @@ textarea {
 
 
 .modal-checkbox:checked + .checkbox-consent::before {
+    background-color: var(--pressed-state);
     border-color: var(--pressed-state);
     background-image: url('../images/checkbox.svg');
     background-size: contain;
