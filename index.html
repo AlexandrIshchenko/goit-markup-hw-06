@@ -440,30 +440,43 @@
         </button>
 
         <form class="modal-form">
-          <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+          <b class="modal-title">Leave your contacts and we will call you back</b>
           
-          <label class="modal-subtitle" for="name">
+          <label class="modal-subtitle" for="name">name</label>
+          <div class="container-modal">
+            <input class="modal-input" type="text" name="name" id="name" autofocus required minlength="3" pattern="[a-zA-Z]+">
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            name
-          </label>
-          <input class="modal-input" type="text" name="name" id="name">
-          
+          </div>
 
           <label class="modal-subtitle" for="tel">phone</label>
-          <input class="modal-input" type="tel" name="tel" id="tel">
+          <div class="container-modal">
+            <input class="modal-input" type="tel" name="tel" id="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
 
           <label class="modal-subtitle" for="user-email">email</label>
-          <input class="modal-input"  type="email" name="user-email" id="user-email">
+          <div class="container-modal">
+            <input class="modal-input"  type="email" name="user-email" id="user-email" required>
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
           
           <label class="modal-subtitle" for="user-comment">comment</label>
-          <textarea class="modal-comment" type="comment" name="comment" id="user-comment" placeholder="Text input"></textarea>
+          <textarea class="modal-comment" name="comment" id="user-comment" placeholder="Text input"></textarea>
 
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <label class="checkbox_consent" for="checkbox">I accept the terms and conditions of the<a href="#"> Privacy Policy</a></label>
-          
-          <button type="submit">Send</button>
+          <div class="container-checkbox">
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" required>
+            <label class="checkbox-consent" for="checkbox">I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy </a></label>
+          </div>
+
+          <div class="container-btn_send">
+            <button class="modal-btn_send" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
