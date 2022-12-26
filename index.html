@@ -437,25 +437,30 @@
           </ul>
         </div>
 
-        <form class="footer-subscribe">
-          <input
-            class="footer_input_email"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail"
-          />
-          <label class="footer-subtitle footer-media" for="email"
-            >Subscribe</label
-          >
-
-          <button class="btn_subscribe" type="submit">
+        <div class="footer-subscribe">
+          <b class="footer-subtitle footer-media" for="email">
             Subscribe
-            <svg class="footer-icon_send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+          </b>
+
+          <form class="form-subscribe">
+            <label type="email">
+              <input
+                class="footer_input_email"
+                name="email"
+                type="email"
+                id="email"
+                placeholder="E-mail"
+                required>
+            </label>
+
+            <button class="btn_subscribe" type="submit">
+              Subscribe
+              <svg class="footer-icon_send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -468,10 +473,8 @@
           </svg>
         </button>
 
+        <b class="modal-title">Leave your contacts and we will call you back</b>
         <form class="modal-form">
-          <b class="modal-title"
-            >Leave your contacts and we will call you back</b
-          >
 
           <label class="modal-subtitle" for="name">name</label>
           <div class="container-modal">
@@ -513,8 +516,7 @@
               type="email"
               name="user-email"
               id="user-email"
-              required
-            />
+              required>
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -525,8 +527,7 @@
             class="modal-comment"
             name="comment"
             id="user-comment"
-            placeholder="Text input"
-          >
+            placeholder="Text input">
           </textarea>
 
           <div class="container-checkbox">
@@ -535,10 +536,10 @@
               type="checkbox"
               name="checkbox"
               id="checkbox"
-              required
-            />
+              required/>
+              
             <label class="checkbox-consent" for="checkbox"
-              >I accept the terms and conditions of the&nbsp;<a href="#"
+              >I accept the terms and conditions of the&nbsp;<a class="policy-link" href="#"
                 >Privacy Policy
               </a>
             </label>
