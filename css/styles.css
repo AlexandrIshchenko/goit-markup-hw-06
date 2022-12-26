@@ -853,6 +853,7 @@ ul {
     height: 24px;
 
     cursor: pointer;
+    outline: none;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1006,9 +1007,8 @@ textarea {
 }
 
 .modal-checkbox:checked + .checkbox-consent::before {
+    background-color: var(--primary-brand);
     border-color: var(--pressed-state);
-    background-image: url('../images/checkbox.svg');
-    background-size: contain;
     background-origin: border-box;
 }
 
@@ -1025,6 +1025,10 @@ textarea {
     border-radius: 2px;
     content: '';
     cursor: pointer;
+
+    background-image: url('../images/checkbox.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container-btn_send {
