@@ -571,6 +571,8 @@ ul {
 .footer-subtitle {
     font-weight: 600;
     font-size: 16px;
+    display: block;
+
     line-height: 1.5;
     color: var(--accent);
     margin-bottom: 16px;
@@ -609,7 +611,6 @@ ul {
 
 .footer-subscribe {
     width: 454px;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -627,10 +628,13 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-form_mail {
+    margin-right: 24px;
+}
+
 .footer_input_email {
     width: 264px;
     height: 40px;
-    margin-right: 24px;
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
